@@ -12,21 +12,24 @@ namespace SelectionStatementExercise
             var userInput = int.Parse(Console.ReadLine());
             if (userInput == favNumber)
             {
-                Console.WriteLine("...luck guess, I'd play the lottery if I were you");
+                Console.WriteLine("...lucky guess! I'd play the lottery if I were you");
 
             }
 
             else if (userInput < favNumber)
             {
-                Console.WriteLine("not even close... way too low");
+                Console.WriteLine($"not even close... {userInput} is way too low");
 
             }
-            else if (userInput == favNumber)
+            else if (userInput > favNumber)
             {
-                Console.WriteLine("looking high to me");
+                Console.WriteLine($"{userInput} is looking high to me");
 
             }
-            else Console.WriteLine("ooga booga");
+            else
+            {
+                Console.WriteLine("ooga booga");
+            }
 
 
             }
